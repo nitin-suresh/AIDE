@@ -1,5 +1,5 @@
 {
-  "name": "cursor-clone",
+  "name": "aide",
   "version": "1.0.0",
   "description": "A modern IDE built with Electron and React",
   "main": "main.js",

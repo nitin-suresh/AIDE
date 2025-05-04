@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # AIDE - AI-Powered IDE
 
 A modern, Electron-based IDE built with React and TypeScript, featuring AI assistance powered by OpenAI. AIDE stands for "AI IDE" - an intelligent development environment that helps you write better code.
+=======
+# AIDE: A(n) IDE ; or AI IDE
+
+A modern, Electron-based IDE built with React and TypeScript.
+>>>>>>> ca32958e4f9a663a8f495c3d59c23b2a0a2450b6
 
 ## Prerequisites
 
@@ -114,4 +120,16 @@ npm run build
 
 ## Contributing
 
+<<<<<<< HEAD
 Feel free to submit issues and enhancement requests! 
+=======
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
+>>>>>>> ca32958e4f9a663a8f495c3d59c23b2a0a2450b6
