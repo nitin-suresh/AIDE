@@ -1,0 +1,20 @@
+{
+  "name": "cursor-clone",
+  "version": "1.0.0",
+  "description": "A modern IDE built with Electron and React",
+  "main": "main.js",
+  "scripts": {
+    "start": "NODE_ENV=production electron .",
+    "build": "cd src/renderer && npm run build",
+    "postinstall": "cd src/renderer && npm install"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.9.1"
+  }
+} 
