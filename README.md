@@ -1,18 +1,19 @@
-# Cursor Clone - Desktop IDE
+# AIDE - AI-Powered IDE
 
-A modern, Electron-based IDE built with React and TypeScript, inspired by Cursor.
+A modern, Electron-based IDE built with React and TypeScript, featuring AI assistance powered by OpenAI. AIDE stands for "AI IDE" - an intelligent development environment that helps you write better code.
 
 ## Prerequisites
 
 - Node.js (v14 or higher)
 - npm (v6 or higher)
+- OpenAI API key
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd cursor-clone
+git clone https://github.com/nitin-suresh/AIDE.git
+cd AIDE
 ```
 
 2. Install dependencies:
@@ -22,6 +23,11 @@ npm install
 
 # Install renderer dependencies (this should happen automatically during npm install)
 cd src/renderer && npm install
+```
+
+3. Set up your OpenAI API key:
+```bash
+export OPENAI_API_KEY='your-api-key-here'
 ```
 
 ## Development
@@ -42,11 +48,15 @@ This will start:
 - File explorer with tree view
 - Monaco-based code editor with TypeScript support
 - Material UI components for consistent design
+- AI Assistant powered by OpenAI GPT-3.5
+  - Code suggestions and completions
+  - Natural language code explanations
+  - Code generation from descriptions
 
 ## Project Structure
 
 ```
-cursor-clone/
+AIDE/
 ├── main.js              # Electron main process
 ├── package.json         # Main package.json
 └── src/
@@ -55,7 +65,8 @@ cursor-clone/
         │   ├── components/
         │   │   ├── Editor.tsx
         │   │   ├── Sidebar.tsx
-        │   │   └── TopBar.tsx
+        │   │   ├── TopBar.tsx
+        │   │   └── AIAssistant.tsx
         │   ├── types/
         │   │   └── index.ts
         │   └── App.tsx
@@ -81,6 +92,12 @@ cursor-clone/
 - Code completion
 - Dark theme
 
+### AI Assistant
+- Chat interface for code-related queries
+- Code generation and suggestions
+- Natural language code explanations
+- One-click code insertion into editor
+
 ## Building for Production
 
 To build the application for production:
@@ -89,25 +106,12 @@ To build the application for production:
 npm run build
 ```
 
-## Troubleshooting
+## Security
 
-1. If you see `ERR_FILE_NOT_FOUND` during development:
-   - This is normal on first run
-   - Wait for the React development server to start
-   - The application will automatically connect to `localhost:3000`
-
-2. If dependencies are missing:
-   - Run `npm install` in the root directory
-   - Run `npm install` in the `src/renderer` directory
+- API keys are managed through environment variables
+- No sensitive data is stored in the codebase
+- `.gitignore` is configured to prevent accidental commits of sensitive data
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+Feel free to submit issues and enhancement requests! 
