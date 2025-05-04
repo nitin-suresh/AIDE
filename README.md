@@ -1,6 +1,6 @@
-# Cursor Clone - Desktop IDE
+# AIDE: A(n) IDE ; or AI IDE
 
-A modern, Electron-based IDE built with React and TypeScript, inspired by Cursor.
+A modern, Electron-based IDE built with React and TypeScript.
 
 ## Prerequisites
 
